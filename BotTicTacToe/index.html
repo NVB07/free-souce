@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe </title>
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./document/style.css">
+</head>
+<body>
+    <audio id="sound-win" src="./sound/win.mp3"></audio>
+    <audio id="sound-click" src="./sound/click.mp3"></audio>
+    <audio id="sound-draw" src="./sound/draw.mp3"></audio>
+    <div class="container">
+        <div class="wall-header">
+            <div class="header">
+                <div class="score">
+                    <div class="nbscore"><span class="playing1"></span> : <span class="nbx-score">0</span></div>
+                    <div class="noti-center">
+                        <div class="noti-play">player`1</div>
+                    </div>
+                    <div class="nbscore"><span class="playing2"></span> : <span class="nbo-score">0</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="end-game">
+            <div id="result">dddd</div>
+            <button id="restart">Continue</button>
+            <button onclick="window.location.reload()" id="reload">↻ Restart</button>
+
+        </div>
+        <div class="game-container">
+            <div class="wrap">
+                <section class="box" data-box-num="0"></section>
+                <section class="box" data-box-num="1"></section>
+                <section class="box" data-box-num="2"></section>
+                <section class="box" data-box-num="3"></section>
+                <section class="box" data-box-num="4"></section>
+                <section class="box" data-box-num="5"></section>
+                <section class="box" data-box-num="6"></section>
+                <section class="box" data-box-num="7"></section>
+                <section class="box" data-box-num="8"></section>
+            </div>
+        </div>
+        <form id="form-text">
+            <div class="form-wall">
+                <h1 class="nameGame">TicTacToe</h1>
+                <div class="game-mode">
+                    <div class="select-mod">
+                        <h3 class="txt-filed">select game mode</h3>
+                        <div class="check-mod">
+                            <input type="radio" checked name="mod" id="one-player-mod">
+                            <label for="one-player-mod" class="label-check">One Player</label><br>
+                            <input type="radio" name="mod" id="two-player-mod">
+                            <label for="two-player-mod" class="label-check">Two Player</label><br>
+                        </div>
+                        <div onclick="doneMod()" class="btn-select-mod btn-hover-and-active">Done</div>
+                    </div>
+                    <div class="form-one-player">
+                        <div class="type-pl first">
+                            <div class="name-player">Player</div>
+                            <div class="input-type">
+                                <input type="text" name="player" value="PlayerName" class="type-name-player input-txt" id="one-player" placeholder="name">
+                            </div>
+                        </div>
+                        <div class="btn-submit">
+                            <button type="button" class="btn-hover-and-active" id="submit-one-player" >Play</button>
+                        </div>
+                    </div>
+
+
+                    <div class="form-two-player">
+                        <div class="type-pl first">
+                            <div class="name-player">Player 1</div>
+                            <div class="input-type">
+                                <input type="text" name="player1" value="Player1" class="type-name-player input-txt" id="pl1" placeholder="name">
+                                <div class="checkbox">
+                                    <input type="radio" id="check-x" class="input-radio" checked name="check" value="X">
+                                    <label for="check-x" class="label-check">X</label><br>
+                                    <input type="radio" id="check-o" class="input-radio" name="check" value="O">
+                                    <label for="check-o" class="label-check">O</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-pl">
+                            <div class="name-player">Player 2</div>
+                            <div class="input-type">
+                                <input type="text" name="player2" value="Player2" class="type-name-player input-txt" id="pl2" placeholder="name">
+                            </div>
+                        </div>
+                        <div class="btn-submit">
+                            <button type="button" class="btn-hover-and-active" id="submit-two-player" >Play</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </form>
+    </div>    
+    <script src="./document/app.js"></script>
+</body>
+</html>
