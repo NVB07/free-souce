@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.main{
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    background-color:#3eafa7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display{
+    margin: 5px;
+    width: 390px;
+    height: 110px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.type-text, .result{
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    /* background-color: #ccc; */
+    font-size: 22px;
+    outline: none;
+    border: none;
+    line-height: 45px;
+}
+
+.result{
+    background-color: #ebebeb;
+    text-align: right;
+}
+
+.key-board{
+    width: 390px;
+    flex: 1;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #27583c;
+}
+
+.key-mode{
+    width: 95%;
+    height: 70px;
+    margin: 15px 5px;
+    background-color: #00894d;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    background-color: #ff3f3f;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 2px 2px  #8d1d1d;
+    transition: box-shadow 0.05s linear,transform 0.05s linear;
+}
+
+.btn:active{
+    box-shadow: 0px 0px  #ccc;
+    transform:  translate(2px, 2px);
+}
+
+.parenthesis{
+    width: 50px;
+}
+
+.key-number{
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+
+.key{
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 60px;
+    font-weight:bold;
+    font-size: 20px;
+    transition: transform 0.03s linear, filter 0.15s linear;
+}
+
+.key:last-child{
+    position: absolute;
+    width: 124px;
+    bottom: 0;
+    right: 0;
+    background-color: #ff3f3f;
+    color: white;
+}
+
+.key[name="del"], .key[name="ac"]{
+    background-color: #ff3f3f;
+    color: white;
+}
+
+.key:hover{
+    filter: brightness(1.2);
+}
+
+.key:active{
+    transform: scale(0.95);
+}
