@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./acssets/style/style.css">
+    <link rel="shortcut icon" href="./acssets/data/image/app.png" type="image/x-icon">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <div class="wallheader">
+                    <div  class="icon-location header-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="input-type">
+                        <input type="text" name="location" placeholder="Address" id="location">
+                    </div>
+                    <div class="icon-search header-icon">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="weather-box">
+                <div class="name-location"> </div>
+                <div class="img-weather">
+                    <img src="./acssets/data/image/404.png" >
+                </div>
+                <div class="temperature-weather">
+                    <div class="current-temperature"></div>
+                    <div class="current-status"></div>
+                </div>
+                <div class="details-weather">
+                    <div class="humidity detail-weather">
+                        <div class="icon-humidity detail-icon">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                        <div class="current-humidity">
+                            <div class="humidity-count">...</div>
+                            <div class="humidity-status">Humidity</div>
+                        </div>
+                    </div>
+                    <div class="wind detail-weather">
+                        <div class="icon-wind detail-icon">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <div class="count-wind">
+                            <div class="wind-count">...</div>
+                            <div class="wind-status">Wind Speed</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./acssets/javascript/app.js"></script>
+</body>
+</html>
