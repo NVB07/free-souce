@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(0deg, #ff3de5, #243dff);
+
+}
+
+.container{
+    width: 500px;
+    display: flex;
+    box-shadow: 0 0 10px 1px #999;
+    background-color: #ffffff3b;
+    flex-direction: column;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.box-input{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.box-input-space  {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.box-input-space input{
+    width: 60%;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 10px 1px #999;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 99999px;
+}
+
+.rotate{
+    margin-bottom: 20px;
+}
+
+.text-holder{
+    color: #00ff2a;
+    background-color: #535353;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.rotate-custom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-rotate{
+    width: 100%;
+    height: 5px;
+    margin: 10px 0;
+    padding: 0;
+    border-radius: 99999px;
+    -webkit-appearance: none;
+
+}
+
+.input-rotate::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 9999px;
+    background-color: red;
+}
+
+.preview{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.preview-sample{
+    margin:0 auto;
+    padding: 15px 50px;
+    width: fit-content;
+    border-radius: 99999px;
+    color: #fff;
+    background-image: linear-gradient(0deg, #ff3de5, #243dff);
+}
+
+
+.atribute{
+    width: 100%;
+    display: flex;
+}
+
+.atribute-css{
+    width: 100%;
+    margin-right: 5px;
+}
+
+.css-text{
+    width: 100%;
+    height: 60px;
+    resize: none;
+    outline: none;
+    border: none;
+    background-color: #535353;
+    color: #00ff2a;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.atribute-btn-copy{
+    width: 50px;
+    height: 60px;
+    position: relative;
+}
+
+.copy{
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #006ec9;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.1s linear;
+}
+
+.copy:active{
+    transform: scale(0.9);
+}
+
+.copied{
+    position: absolute;
+    display: none;
+    top: -15px;
+    left: -10px;
+    background-color: #f66358;
+    color: #fff;
+    font-size: 14px;
+    width: 60px;
+    padding: 5px;
+    box-shadow: 0 0 10px 1px #999;
+    border-radius: 10px;
+
+}

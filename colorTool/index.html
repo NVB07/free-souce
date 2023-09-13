@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../../acssets/photo/item-img/color.png" type="image/x-icon">
+    <title>Color tool</title>
+</head>
+<body>
+     <div class="main">
+        <div class="container">
+            <div class="box-input">
+                <div class="box-input-space">
+                    <input type="color" name="color" value="#ff3de5" class="input-color-1">
+                </div>
+                <div class="box-input-space">
+                    <input type="color" name="color" value="#243dff" class="input-color-2">
+                </div>
+            </div>
+            <div class="rotate">
+                <div class="text-holder">0deg</div>
+                <div class="rotate-custom">
+                    <input type="range"  name="rotate" value="0" min="0" max="360" step="5" class="input-rotate">
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview-sample">your color</div>
+            </div>
+            
+            <div class="atribute">
+                <div class="atribute-css">
+                    <div class="css-text">background-image: linear-gradient(0deg, #ff3de5, #243dff);</div>
+                </div>
+                <div class="atribute-btn-copy">
+                    <button class="copy" title="copy" > <i class="fa-solid fa-copy"></i> </button>
+                    <div class="copied">copied !</div>
+                </div>
+            </div>
+        </div>
+     </div>
+     
+
+    <script src="./main.js"></script>
+</body>
+</html>
